@@ -1,0 +1,12 @@
+@mixin font($sizeVal, $weightVal: bold, $colorVal: black, $spacingVal: 0px) {
+    font-size: $sizeVal;
+    font-weight: $weightVal;
+    color: $colorVal;
+    letter-spacing: $spacingVal;
+}
+
+@mixin sophieFont {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}

@@ -1,12 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@400;700&display=swap');
 @import 'setup'; 
+@import 'font'; 
+@import 'topNav'; 
 
-h1{
-    font-family: 'Lora', serif;
-    font-weight: bold;
-    font-size: 80px;
-    text-transform: uppercase;
-    line-height: 92px;
+html {
+    background-color: #f0efed;
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 80%;
 }
 
+// HEADER SECTION 
+header {
+    background-color: #f6a823;
+}
+
+h1{
+   @include sophieFont; 
+    font-size: 80px;
+    line-height: 92px;
+    position: absolute;
+}
+// HEADER SECTION 
 
