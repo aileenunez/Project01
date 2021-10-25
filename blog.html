@@ -71,16 +71,16 @@
                         <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed solicitudin ipsum quis nunc sollicitudin ultrices. Dane euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu.</p>
                     </div>
                     <form action="#" name="contactForm" class="contactForm">
-                        <div class="srOnly">Name:</div>
-                        <input type="text" placeholder="Name" required>
+                        <label class="srOnly" for="name">Name:</label>
+                        <input type="text" name="name" placeholder="Name" required>
     
-                        <div class="srOnly">Email Address:</div>
+                        <label class="srOnly" for="userEmail">Email Address:</label>
                         <input type="email" name="userEmail" id="userEmail" placeholder="Email address" required>
     
-                        <div class="srOnly">Comment:</div>
+                        <label class="srOnly" for="userInput">Comment:</label>
                         <textarea name="userInput" id="userInput" placeholder="Comment" required></textarea>
     
-                        <button type="submit">Post Comment</button>
+                        <button aria-label="Post Comment" type="submit">Post Comment</button>
                     </form>
                 </div>
             </div>
