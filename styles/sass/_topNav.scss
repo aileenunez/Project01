@@ -1,6 +1,7 @@
 header nav {
     @include font(20px, 1px);
     text-transform: uppercase;
+    background-color: #f6a823;
     ul{
         display: flex;
         margin: 0; 
@@ -20,11 +21,7 @@ header nav {
 }
 
 header p{
-    @include sophieFont; 
+    @include sophieFont(35px); 
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 35px;
 }
-
-// DELETE ONCE DONE WITH NAV 
-

@@ -1,0 +1,40 @@
+// HEADER SECTION 
+.headerRel {
+    position: relative;
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.headerAbs {
+    position: absolute;
+    bottom: -40px;
+    left: 160px;
+}
+// HEADER SECTION 
+.contact {
+    margin-top: 50px;
+}
+// CONTACT SECTION 
+.contactSec {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+}
+.contactInfo {
+    li {
+        list-style:none; 
+        display: inline-block;
+        color: #f6a823;
+    }
+}
+
+// CONTACT SECTION 
+// FORM SECTION 
+textarea {
+    display: block;
+    width: 650px;
+    height: 250px;
+}
+
+// FORM SECTIOM 

@@ -5,8 +5,9 @@
     letter-spacing: $spacingVal;
 }
 
-@mixin sophieFont {
+@mixin sophieFont($fontSize) {
     font-family: 'Lora', serif;
     font-weight: bold;
     text-transform: uppercase;
+    font-size: $fontSize;
 }
