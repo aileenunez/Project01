@@ -5,11 +5,13 @@
 @import 'contact';
 @import 'footer'; 
 @import 'button'; 
+@import 'blog';
 
 html {
     background-color: #f0efed;
     font-family: 'Roboto', sans-serif;
     line-height: 32px;
+    font-size: 20px;
 }
 .wrapper {
     margin: 0 auto;
