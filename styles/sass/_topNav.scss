@@ -1,5 +1,5 @@
 header nav {
-    @include font(20px, 1px);
+    @include font(20px, bold, black, 1px);
     text-transform: uppercase;
     background-color: #f6a823;
     ul{
@@ -24,4 +24,8 @@ header p{
     @include sophieFont(35px); 
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.currentPage {
+    color: white;
 }

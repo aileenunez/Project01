@@ -238,9 +238,9 @@ html {
 
 header nav {
   font-size: 20px;
-  font-weight: 1px;
+  font-weight: bold;
   color: black;
-  letter-spacing: 0px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   background-color: #f6a823;
 }
@@ -275,6 +275,10 @@ header p {
   margin-bottom: 0;
 }
 
+.currentPage {
+  color: white;
+}
+
 .headerRel {
   position: relative;
 }
@@ -291,27 +295,60 @@ header p {
 }
 
 .contact {
-  margin-top: 50px;
+  margin: 80px 50px;
 }
 
 .contactSec {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  -webkit-column-gap: 20px;
-     -moz-column-gap: 20px;
-          column-gap: 20px;
 }
 
-.contactInfo li {
+.contactInfo ul {
+  background-color: white;
+  width: 90%;
+}
+.contactInfo ul li {
   list-style: none;
+  margin-left: 30px;
+  padding-bottom: 5px;
+}
+
+.social li {
+  margin-top: 30px;
   display: inline-block;
   color: #f6a823;
+  margin-left: 30px;
+}
+
+.email {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 1px;
+}
+
+.contactForm input {
+  height: 50px;
+  width: 49%;
+  margin-bottom: 25px;
+  font-style: italic;
+  padding-left: 25px;
+}
+.contactForm button {
+  width: 100%;
 }
 
 textarea {
-  display: block;
-  width: 650px;
+  width: 100%;
   height: 250px;
+  resize: none;
+  margin-bottom: 25px;
+  font-style: italic;
+  padding: 30px 0 0 25px;
+}
+
+.name {
+  margin-right: 12px;
 }
 
 footer {
@@ -323,15 +360,32 @@ footer p {
   padding: 10px 0;
 }
 
+button {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 20px;
+  text-align: center;
+  background-color: #05afc1;
+  padding: 15px 25px;
+  border-radius: 0%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  display: block;
+}
+
 html {
   background-color: #f0efed;
   font-family: "Roboto", sans-serif;
+  line-height: 32px;
 }
 
 .wrapper {
   margin: 0 auto;
   width: 80%;
-  border: 4px solid red;
 }
 
 ul {
