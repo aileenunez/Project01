@@ -288,6 +288,10 @@ header nav ul li a {
   color: black;
 }
 
+.burgerMenu {
+  display: none;
+}
+
 header p {
   font-family: "Lora", serif;
   font-weight: bold;
@@ -301,6 +305,16 @@ header p {
   color: white;
 }
 
+@media (max-width: 768px) {
+  header nav ul {
+    display: none;
+  }
+
+  .burgerMenu {
+    display: block;
+    padding: 10px 0 10px 10px;
+  }
+}
 .headerRel {
   position: relative;
 }
@@ -697,4 +711,12 @@ h2 {
 .gallerySec div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 880px) {
+  .infoSec {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "photos" "about" "blog" "getin";
+  }
 }

@@ -19,6 +19,9 @@ header nav {
     }
 
 }
+.burgerMenu{
+    display: none; 
+}
 
 header p{
     @include sophieFont(35px); 
@@ -28,4 +31,15 @@ header p{
 
 .currentPage {
     color: white;
+}
+//----------------------------------------------------------//
+
+@media (max-width: 768px) {
+    header nav ul {
+        display: none;
+    }
+    .burgerMenu{
+        display: block;
+        padding:10px 0 10px 10px; 
+    }
 }

@@ -189,3 +189,12 @@ h2{
 }
 
 //GALLERY IMGS 
+
+@media (max-width:880px) {
+    .infoSec{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'photos''about'
+    'blog' 'getin';
+    }
+}
