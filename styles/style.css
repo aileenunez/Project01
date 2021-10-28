@@ -429,7 +429,7 @@ button {
 .blogSideBar div {
   background-color: white;
   margin-bottom: 50px;
-  padding: 55px 0 55px 60px;
+  padding: 55px 60px;
 }
 .blogSideBar div h3 {
   font-size: 24px;
