@@ -564,10 +564,11 @@ h2 {
 }
 
 .checkered {
+  background-color: white;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 20px;
+  gap: 50px;
 }
 
 .one {
@@ -589,8 +590,111 @@ h2 {
   text-transform: uppercase;
 }
 
+.two {
+  padding: 40px 231px 40px 70px;
+}
+.two button {
+  margin-top: 32px;
+  display: inline-block;
+}
+
+.three {
+  text-align: right;
+  padding: 40px 70px 40px 231px;
+}
+.three button {
+  margin-top: 32px;
+  display: inline-block;
+}
+
 .four {
   background-color: #f6a823;
-  -webkit-box-shadow: 0px 10px 0px 0px #f6a823;
-          box-shadow: 0px 10px 0px 0px #f6a823;
+  -webkit-box-shadow: 0px 30px 0px 0px #f6a823;
+          box-shadow: 0px 30px 0px 0px #f6a823;
+}
+.four img {
+  position: relative;
+  top: 15px;
+  right: 40px;
+}
+
+.infoSec {
+  margin: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "photos about" "blog getin";
+  gap: 50px;
+}
+.infoSec i {
+  border-radius: 50%;
+  background-color: #f6a823;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding-top: 15px;
+}
+.infoSec p {
+  padding-left: 80px;
+}
+.infoSec a {
+  padding-left: 20px;
+  margin-bottom: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 1px;
+}
+
+.photosI {
+  grid-area: photos;
+}
+
+.aboutI {
+  grid-area: about;
+}
+
+.blogI {
+  grid-area: blog;
+}
+
+.getI {
+  grid-area: getin;
+}
+
+.bleachers img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.journeySec {
+  padding: 70px 0;
+}
+
+.journeyGrid {
+  display: grid;
+  grid-template-columns: 30% 66%;
+}
+.journeyGrid img {
+  -webkit-box-shadow: 14px 14px 0px 0px #f6a823;
+          box-shadow: 14px 14px 0px 0px #f6a823;
+}
+.journeyGrid h2 {
+  margin: 0;
+  margin-bottom: 40px;
+}
+.journeyGrid p {
+  margin-bottom: 40px;
+}
+
+.gallerySec {
+  background-color: white;
+  padding: 70px 0;
+}
+.gallerySec div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
