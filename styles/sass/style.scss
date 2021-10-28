@@ -7,31 +7,86 @@
 @import 'button'; 
 @import 'blog';
 
-html {
-    background-color: #f0efed;
-    font-family: 'Roboto', sans-serif;
-    line-height: 32px;
-    font-size: 20px;
-}
-.wrapper {
-    margin: 0 auto;
-    width: 80%;
-}
-ul {
-    margin: 0;
-    padding: 0;
-}
-p {
-    margin: 0; 
-}
-// HEADER SECTION 
-
 h1{
     @include sophieFont(80px); 
      line-height: 92px;
      margin: 0;
 }
+// HEADER SECTION 
+.header {
+    background-color: #f6a823;
+    height: 70vh; 
+}
 
+.headerDiv{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    div{
+        width:50%; 
+    }
+    h1{
+        font-size: 150px;
+    }
+}
+.headerSec1 {
+    position: relative;
+    img{
+        position: absolute;
+        bottom: 65px; 
+        left: -15px; 
+    }
+}
+.headerImg {
+    position: relative;
+    box-shadow: 14px 15px 0px -1px #FFFFFF;;
+    top: 50px; 
 
+}
+// HEADER SECTION 
+//WHO IS SOPHIE 
+h2{
+    margin-bottom: 40px;
+    @include font(42px, bold, black, 1px); 
+    text-transform: uppercase;
+}
+.about{
+    margin: 150px 0 150px 80px; 
+    width:80%; 
+    p{
+        margin-bottom: 40px;
+    }
+}
+//WHO IS SOPHIE 
+// CHECKERED SECTION 
+.checkered {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:20px; 
+}
+.one{
+    background-color: #a82706;
+    box-shadow: 10px -10px 0px 10px #a82706;
+    img{
+        position: relative;
+        bottom: 30px;  
+        left: 175px;
+    }
+}
+.two, .three{
+    h3{
+        @include font(32px, bold, black, 1px); 
+        text-transform: uppercase;
+    }
+}
 
+.four{
+    background-color: #f6a823;
+    box-shadow: 0px 10px 0px 0px #f6a823;
+}
+
+// CHECKERED SECTION 
 

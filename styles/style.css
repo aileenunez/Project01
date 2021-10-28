@@ -237,6 +237,27 @@ html {
   overflow: hidden;
 }
 
+html {
+  background-color: #f0efed;
+  font-family: "Roboto", sans-serif;
+  line-height: 32px;
+  font-size: 20px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
 header nav {
   font-size: 20px;
   font-weight: bold;
@@ -475,27 +496,6 @@ article p {
   border-bottom: #f6a823 4px solid;
 }
 
-html {
-  background-color: #f0efed;
-  font-family: "Roboto", sans-serif;
-  line-height: 32px;
-  font-size: 20px;
-}
-
-.wrapper {
-  margin: 0 auto;
-  width: 80%;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-p {
-  margin: 0;
-}
-
 h1 {
   font-family: "Lora", serif;
   font-weight: bold;
@@ -503,4 +503,94 @@ h1 {
   font-size: 80px;
   line-height: 92px;
   margin: 0;
+}
+
+.header {
+  background-color: #f6a823;
+  height: 70vh;
+}
+
+.headerDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+.headerDiv div {
+  width: 50%;
+}
+.headerDiv h1 {
+  font-size: 150px;
+}
+
+.headerSec1 {
+  position: relative;
+}
+.headerSec1 img {
+  position: absolute;
+  bottom: 65px;
+  left: -15px;
+}
+
+.headerImg {
+  position: relative;
+  -webkit-box-shadow: 14px 15px 0px -1px #FFFFFF;
+          box-shadow: 14px 15px 0px -1px #FFFFFF;
+  top: 50px;
+}
+
+h2 {
+  margin-bottom: 40px;
+  font-size: 42px;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.about {
+  margin: 150px 0 150px 80px;
+  width: 80%;
+}
+.about p {
+  margin-bottom: 40px;
+}
+
+.checkered {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.one {
+  background-color: #a82706;
+  -webkit-box-shadow: 10px -10px 0px 10px #a82706;
+          box-shadow: 10px -10px 0px 10px #a82706;
+}
+.one img {
+  position: relative;
+  bottom: 30px;
+  left: 175px;
+}
+
+.two h3, .three h3 {
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.four {
+  background-color: #f6a823;
+  -webkit-box-shadow: 0px 10px 0px 0px #f6a823;
+          box-shadow: 0px 10px 0px 0px #f6a823;
 }

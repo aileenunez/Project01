@@ -7,3 +7,23 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 *, *:before, *:after {box-sizing: inherit}
 
 .srOnly { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+
+html {
+    background-color: #f0efed;
+    font-family: 'Roboto', sans-serif;
+    line-height: 32px;
+    font-size: 20px;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 80%;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0; 
+}
+
