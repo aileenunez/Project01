@@ -334,6 +334,7 @@ header p {
   margin-bottom: 25px;
   font-style: italic;
   padding-left: 25px;
+  border: none;
 }
 .contactForm button {
   width: 100%;
@@ -346,6 +347,7 @@ textarea {
   margin-bottom: 25px;
   font-style: italic;
   padding: 30px 0 0 25px;
+  border: none;
 }
 
 .name {
@@ -378,11 +380,11 @@ button {
   display: block;
 }
 
-.boxSec {
+.blog {
   margin: 80px 0;
 }
 
-.box {
+.blogSec {
   display: grid;
   grid-template-columns: 1fr 2fr;
   -webkit-column-gap: 50px;
@@ -390,38 +392,42 @@ button {
           column-gap: 50px;
 }
 
-.box2 {
+.blogContainer {
   grid-column: 2;
 }
 
-.box1 {
+.blogSideBar {
   grid-column: 1;
   grid-row-start: 1;
 }
 
-.box1 div {
+.slantedText {
+  font-style: italic;
+}
+
+.blogSideBar div {
   background-color: white;
   margin-bottom: 50px;
   padding: 55px 0 55px 60px;
 }
-.box1 div h3 {
+.blogSideBar div h3 {
   font-size: 24px;
   font-weight: bold;
   color: black;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin: 10px 0 10px 0;
+  margin: 10px 0;
 }
-.box1 div span {
+.blogSideBar div span {
   color: #285e64;
   font-weight: bold;
 }
 
-.box1 ul {
+.blogSideBar ul {
   list-style-type: none;
   padding-left: 10px;
 }
-.box1 ul p::before {
+.blogSideBar ul p::before {
   content: "• ";
   color: #f6a823;
   padding-right: 15px;
@@ -430,7 +436,12 @@ button {
 article {
   background-color: white;
   border-bottom: #f6a823 4px solid;
-  padding: 0 60px;
+  padding: 55px 60px;
+  margin-bottom: 50px;
+}
+article span {
+  color: #285e64;
+  font-weight: bold;
 }
 article h2 {
   font-size: 32px;
@@ -438,12 +449,30 @@ article h2 {
   color: black;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 0 15px 0;
+}
+article p {
+  margin-bottom: 10px;
 }
 
-.box2 div {
+.blogContainer div {
   background: white;
-  padding: 0 60px;
+  padding: 55px 60px;
+  margin-bottom: 50px;
+}
+.blogContainer div .slantedText {
+  color: #285e64;
+  font-weight: bold;
+}
+.blogContainer div img {
+  float: left;
+}
+.blogContainer div p {
+  margin-left: 110px;
+}
+
+.blogContainer div:last-of-type {
+  border-bottom: #f6a823 4px solid;
 }
 
 html {

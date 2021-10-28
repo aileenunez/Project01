@@ -1,32 +1,35 @@
 // GRID SECTION 
-.boxSec{
+.blog{
     margin: 80px 0; 
 }
 
-.box {
+.blogSec {
     display: grid;
     grid-template-columns: 1fr 2fr;
     column-gap: 50px;
 }
-.box2 {
+.blogContainer {
     grid-column: 2;
 }
 
-.box1 {
+.blogSideBar {
     grid-column: 1;
     grid-row-start: 1;
 }
 
 // GRID SECTION 
 // SIDE BAR SECTION 
-.box1 div {
+.slantedText{
+    font-style: italic;
+}
+.blogSideBar div {
     background-color: white;
     margin-bottom: 50px;
     padding:55px 0 55px 60px;
     h3{
         @include font(24px, bold, black, 1px); 
         text-transform: uppercase;
-        margin: 10px 0 10px 0;
+        margin: 10px 0;
     }
     span {
         color: #285e64;
@@ -34,7 +37,7 @@
     }
 }
 
-.box1 ul{
+.blogSideBar ul{
     list-style-type: none;
     padding-left: 10px;
     p::before {
@@ -49,26 +52,41 @@
 article {
     background-color: white;
     border-bottom: #f6a823 4px solid;
-    padding: 0 60px; 
+    padding: 55px 60px; 
+    margin-bottom: 50px;
+    span{
+        color: #285e64; 
+        font-weight: bold; 
+    }
     h2{
         @include font(32px, bold, black, 1px); 
         text-transform: uppercase;
-        margin:0; 
+        margin:0 0 15px 0;
+    }
+    p{
+        margin-bottom: 10px;
     }
 }
 // ARTICLE SECTION 
-.box2 div{
+
+// COMMENT SECTION 
+.blogContainer div{
     background: white;
-    padding:0 60px; 
+    padding:55px 60px; 
+    margin-bottom: 50px;
+
+    .slantedText{
+        color: #285e64; 
+        font-weight: bold; 
+    }
+    img{
+        float: left;
+    }
+    p{
+        margin-left: 110px;
+    }
 }
-
+.blogContainer div:last-of-type{
+    border-bottom: #f6a823 4px solid;
+}
 // COMMENT SECTION 
-
-
-// COMMENT SECTION 
-
-
-// FORM SECTION 
-
-
-//FORM SECTION 
