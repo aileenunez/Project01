@@ -313,6 +313,7 @@ header p {
   .burgerMenu {
     display: block;
     padding: 10px 0 10px 10px;
+    border: 2px red solid;
   }
 }
 .headerRel {
