@@ -7,21 +7,18 @@
 @import 'button'; 
 @import 'blog';
 @import 'form';
-
+//STYLINGS FOR HOME PAGE 
 h1{
     @include sophieFont(80px); 
      line-height: 92px;
      margin: 0;
 }
-// HEADER SECTION 
+// HEADER SECTION //
 .header {
     background-color: #f6a823;
     height: 70vh; 
 }
-
 .headerDiv{
-    // display: flex;
-    // justify-content: space-evenly;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -36,11 +33,10 @@ h1{
 }
 .headerSec1 {
     position: relative;
-    img{
+    img {
         position: absolute;
         bottom: 45%; 
-        left: -1% ;
-        
+        left: -1% ; 
     }
 }
 .headerImg {
@@ -48,11 +44,10 @@ h1{
     top: 5%; 
     box-shadow: 14px 15px 0px -1px #FFFFFF;;
     margin-bottom:-90px; 
-    
 }
-// HEADER SECTION 
-//WHO IS SOPHIE 
-h2{
+// HEADER SECTION /// 
+//WHO IS SOPHIE ///
+h2 {
     margin-bottom: 40px;
     @include font(42px, bold, black, 1px); 
     text-transform: uppercase;
@@ -60,12 +55,12 @@ h2{
 .about{
     margin: 150px 0 150px 80px; 
     width:80%; 
-    p{
+    p {
         margin-bottom: 40px;
     }
 }
-//WHO IS SOPHIE 
-// CHECKERED SECTION 
+//WHO IS SOPHIE ///
+// CHECKERED SECTION ///
 .checkered {
     width: 100%;
     background-color: white;
@@ -74,57 +69,52 @@ h2{
     grid-template-rows: 1fr 1fr;
     gap:50px; 
 }
-.one{
-    background-color: #a82706;
+.one { background-color: #a82706;
     box-shadow: 10px -10px 0px 10px #a82706;
-    img{
+    img {
         position: relative;
         bottom: 30px;  
         left: 175px;
     }
 }
 .two, .three{
-    h3{
+    h3 {
         @include font(32px, bold, black, 1px); 
         text-transform: uppercase;
     }
 }
-.two{
-    padding: 40px 231px 40px 70px; 
-    button{
+.two { padding: 40px 231px 40px 70px; 
+    button {
         margin-top: 32px;
         display: inline-block;
     }
 }
-.three{
-    text-align: right; 
+.three { text-align: right; 
     padding: 40px 70px 40px 231px; 
-    button{
+    button {
         margin-top: 32px;
         display: inline-block;
     }
 }
 
-.four{
-    background-color: #f6a823;
+.four{ background-color: #f6a823;
     box-shadow: 0px 30px 0px 0px #f6a823;
-    img{
+    img {
         position: relative; 
         top: 15px; 
         right: 40px; 
     }
 }
-// CHECKERED SECTION 
-// LINKS SECTION 
-.infoSec{
-    margin: 100px; 
+// CHECKERED SECTION ///
+// LINKS SECTION ///
+.infoSec { margin: 100px; 
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto; 
     grid-template-areas: 'photos about'
     'blog getin';
     gap: 50px;
-    i{
+    i {
         border-radius: 50%;
         background-color: #f6a823;
         width:50px; 
@@ -132,10 +122,10 @@ h2{
         text-align: center;
         padding-top: 15px;
     }
-    p{
+    p {
         padding-left: 80px;
     }
-    a{
+    a {
         padding-left: 20px;
         margin-bottom: 40px;
         text-decoration: none;
@@ -143,27 +133,26 @@ h2{
         @include font(24px, bold, black, 1px)
     }
 }
-.photosI{
+.photosI {
     grid-area: photos;
 }
-.aboutI{
+.aboutI {
     grid-area: about;
 }
-.blogI{
+.blogI {
     grid-area: blog;
 }
-.getI{
+.getI {
     grid-area: getin;
 }
-//LINKS SECTION 
-//BLEACHER SECTION 
+//LINKS SECTION ////
+//BLEACHER SECTION ///
 .bleachers img{
     width: 100%;
     object-fit: cover;
 }
-
-//BLEACHER SECTION 
-//JOURNEY SECTION 
+//BLEACHER SECTION ///
+//JOURNEY SECTION ///
 .journeySec{
     padding: 70px 0; 
 }
@@ -171,24 +160,22 @@ h2{
     display: grid;
     grid-template-columns: 1fr 2fr;
     column-gap: 50px;
-    img{
+    img {
         box-shadow: 14px 14px 0px 0px #f6a823;
     }
-    h2{
+    h2 {
         margin:0; 
         margin-bottom: 40px;
     }
-    p{
+    p {
         margin-bottom: 40px;
     }
 }
-
-//JOURNEY SECTION 
-//GALLERY IMGS 
-.gallerySec{
-    background-color: white; 
+//JOURNEY SECTION /////
+//GALLERY IMGS ///
+.gallerySec { background-color: white; 
     padding:70px 0; 
-    div{
+    div {
         width:100%; 
         display: grid;
         grid-template-columns:repeat(auto-fit, 400px);
@@ -197,20 +184,14 @@ h2{
         row-gap: 30px;
     }
 }
-
-//GALLERY IMGS 
-
-
-
-//_________________________________________//
-
+//GALLERY IMGS ////
+//________________________________________________
 @media (max-width: 1500px){
-    .checkered{
-        gap:30px; 
+    .checkered{ gap:30px; 
         .one, .four{
             box-shadow: none;
         }
-        img{
+        img {
             top:0; 
             right:0; 
             bottom:0; 
@@ -220,41 +201,34 @@ h2{
     }
 }
 @media (max-width: 1280px) {
-    .headerImg{
+    .headerImg {
         display: none;
     }
-    .checkered{
+    .checkered {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
-    .one, .four{
+    .one, .four {
         display: none;
     }
-    .three{
+    .three {
         text-align: left;
         padding: 40px 231px 40px 70px;
     }
-    .journeyGrid{
+    .journeyGrid {
         grid-template-columns: 1fr;
     }
-    .journeyGrid img{
+    .journeyGrid img {
         display: none;
     }
-
 }
-
-@media (max-width: 940px) {
-
-}
-
-/* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-    .headerSec1{
+    .headerSec1 {
         width: 50%;
     }
 }
 @media (max-width:880px) {
-    .infoSec{
+    .infoSec {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: 'photos''about'
@@ -264,27 +238,26 @@ h2{
     }
 }
 @media (max-width: 700px) {
-    .header{
+    .header {
         background: none;
         height: 0vh;
     }
-    .headerDiv{
+    .headerDiv {
         display: none;
     }
-    .about{
-        .wrapper{
+    .about {
+        .wrapper {
             width: 100%;
         }
        margin: 0px 0px 50px 30px; 
     }
 }
-/* Landscape phones and down */
 @media (max-width: 480px) {
-    .two, .three{
+    .two, .three {
         padding-left: 10px;
         padding-right: 10px; 
     }
-    .infoSec div{
+    .infoSec div {
         margin-bottom: 10px;
     }
 }

@@ -1,5 +1,5 @@
-header nav {
-    @include font(20px, bold, black, 1px);
+//Stylings for top navigation menu throughout website 
+header nav { @include font(20px, bold, black, 1px);
     text-transform: uppercase;
     background-color: #f6a823;
     ul{
@@ -9,36 +9,32 @@ header nav {
         justify-content: center;
         list-style: none;
         align-items: center;
-        li{
+        li {
             margin: 12px 30px;
-            a{
+            a {
                 text-decoration: none;
                 color: black;  
             }
         }
     }
-
 }
 .burgerMenu{
     display: none; 
 }
-
 header p{
     @include sophieFont(35px); 
     margin-top: 0;
     margin-bottom: 0;
 }
-
 .currentPage {
     color: white;
 }
 //----------------------------------------------------------//
-
 @media (max-width: 768px) {
     header nav ul {
         display: none;
     }
-    .burgerMenu{
+    .burgerMenu {
         display: block;
         padding:10px 0 10px 10px; 
     }

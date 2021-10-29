@@ -1,8 +1,9 @@
-// GRID SECTION 
+//Styled Blog Page W/ Media Queries for RWD 
+
+// GRID SECTION //
 .blog{
     margin: 80px 0; 
 }
-
 .blogSec {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -11,15 +12,13 @@
 .blogContainer {
     grid-column: 2;
 }
-
 .blogSideBar {
     grid-column: 1;
     grid-row-start: 1;
 }
+// GRID SECTION // 
 
-
-// GRID SECTION 
-// SIDE BAR SECTION 
+// SIDE BAR SECTION ///
 .slantedText{
     font-style: italic;
 }
@@ -27,55 +26,54 @@
     background-color: white;
     margin-bottom: 50px;
     padding:55px 60px;
-    h3{
-        @include font(24px, bold, black, 1px); 
-        text-transform: uppercase;
-        margin: 10px 0;
+        h3{
+            @include font(24px, bold, black, 1px); 
+            text-transform: uppercase;
+            margin: 10px 0;
     }
-    span {
-        color: #285e64;
-        font-weight: bold;
+        span {
+            color: #285e64;
+            font-weight: bold;
     }
 }
 
 .blogSideBar ul{
     list-style-type: none;
     padding-left: 10px;
-    p::before {
-        content: "• "; 
-        color: #f6a823; 
-        padding-right: 15px; 
+        p::before {
+            content: "• "; 
+            color: #f6a823; 
+            padding-right: 15px; 
     }
 }
-//SIDE BAR SECTION 
+//SIDE BAR SECTION ////
 
-// ARTICLE SECTION 
+// ARTICLE SECTION ///
 article {
     background-color: white;
     border-bottom: #f6a823 4px solid;
     padding: 55px 60px; 
     margin-bottom: 50px;
-    span{
-        color: #285e64; 
-        font-weight: bold; 
+        span{
+            color: #285e64; 
+            font-weight: bold; 
     }
-    h2{
-        @include font(32px, bold, black, 1px); 
-        text-transform: uppercase;
-        margin:0 0 15px 0;
+        h2{
+            @include font(32px, bold, black, 1px); 
+            text-transform: uppercase;
+            margin:0 0 15px 0;
     }
-    p{
-        margin-bottom: 10px;
+        p{
+            margin-bottom: 10px;
     }
 }
-// ARTICLE SECTION 
+// ARTICLE SECTION //
 
-// COMMENT SECTION 
+// COMMENT SECTION //
 .blogContainer div{
     background: white;
     padding:55px 60px; 
     margin-bottom: 50px;
-
     .slantedText{
         color: #285e64; 
         font-weight: bold; 
@@ -90,10 +88,9 @@ article {
 .blogContainer div:last-of-type{
     border-bottom: #f6a823 4px solid;
 }
-// COMMENT SECTION 
+// COMMENT SECTION //
 
-//______________________________________//
-/* Portrait tablet and small desktops */
+//_______________________________________________________________
 @media (max-width: 940px) {
     .blogSec {
         grid-template-columns: 1fr;
@@ -101,17 +98,13 @@ article {
     .blogContainer {
         grid-column: 1;
     }
-    
     .blogSideBar {
         grid-column: 1;
         grid-row-start: 1;
-        // margin-top: 50px;
     }
 }
-
-/* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-    .blog{
+    .blog {
         margin-left: -8%;
     }
 }
