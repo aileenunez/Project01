@@ -525,23 +525,22 @@ h1 {
 }
 
 .headerDiv {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  -webkit-column-gap: 60px;
+     -moz-column-gap: 60px;
+          column-gap: 60px;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
 }
-.headerDiv div {
-  width: 50%;
-}
 .headerDiv h1 {
   font-size: 150px;
+  -webkit-transform: translateX(8%);
+          transform: translateX(8%);
 }
 
 .headerSec1 {
@@ -549,15 +548,16 @@ h1 {
 }
 .headerSec1 img {
   position: absolute;
-  bottom: 65px;
-  left: -15px;
+  bottom: 45%;
+  left: -1%;
 }
 
 .headerImg {
   position: relative;
+  top: 5%;
   -webkit-box-shadow: 14px 15px 0px -1px #FFFFFF;
           box-shadow: 14px 15px 0px -1px #FFFFFF;
-  top: 50px;
+  margin-bottom: -90px;
 }
 
 h2 {
@@ -578,6 +578,7 @@ h2 {
 }
 
 .checkered {
+  width: 100%;
   background-color: white;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -635,8 +636,8 @@ h2 {
 .infoSec {
   margin: 100px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
   grid-template-areas: "photos about" "blog getin";
   gap: 50px;
 }
@@ -705,6 +706,7 @@ h2 {
 }
 
 .gallerySec {
+  width: 100%;
   background-color: white;
   padding: 70px 0;
 }
@@ -713,10 +715,78 @@ h2 {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+@media (max-width: 1500px) {
+  .checkered {
+    gap: 30px;
+  }
+  .checkered .one, .checkered .four {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .checkered img {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 1280px) {
+  .headerImg {
+    display: none;
+  }
+
+  .checkered {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .one, .four {
+    display: none;
+  }
+
+  .three {
+    text-align: left;
+    padding: 40px 231px 40px 70px;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .headerSec1 {
+    width: 50%;
+  }
+}
 @media (max-width: 880px) {
   .infoSec {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: "photos" "about" "blog" "getin";
+    gap: 0;
+    margin-left: 0;
+  }
+}
+@media (max-width: 700px) {
+  .header {
+    background: none;
+    height: 0vh;
+  }
+
+  .headerDiv {
+    display: none;
+  }
+
+  .about {
+    margin: 0px 0 90px 80px;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .two, .three {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .infoSec div {
+    margin-bottom: 10px;
   }
 }

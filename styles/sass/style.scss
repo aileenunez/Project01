@@ -20,31 +20,35 @@ h1{
 }
 
 .headerDiv{
-    display: flex;
-    justify-content: space-evenly;
+    // display: flex;
+    // justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 60px;
     text-align: center;
     align-items: center;
     height: 100%;
-    div{
-        width:50%; 
-    }
     h1{
         font-size: 150px;
+        transform:translateX(8%); 
     }
 }
 .headerSec1 {
     position: relative;
     img{
         position: absolute;
-        bottom: 65px; 
-        left: -15px; 
+        bottom: 45%; 
+        left: -1% ;
+        
     }
 }
 .headerImg {
     position: relative;
+    top: 5%; 
     box-shadow: 14px 15px 0px -1px #FFFFFF;;
-    top: 50px; 
-
+    margin-bottom:-90px; 
+    
 }
 // HEADER SECTION 
 //WHO IS SOPHIE 
@@ -63,6 +67,7 @@ h2{
 //WHO IS SOPHIE 
 // CHECKERED SECTION 
 .checkered {
+    width: 100%;
     background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -114,8 +119,8 @@ h2{
 .infoSec{
     margin: 100px; 
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto; 
     grid-template-areas: 'photos about'
     'blog getin';
     gap: 50px;
@@ -180,6 +185,7 @@ h2{
 //JOURNEY SECTION 
 //GALLERY IMGS 
 .gallerySec{
+    width: 100%;
     background-color: white; 
     padding:70px 0; 
     div{
@@ -190,11 +196,82 @@ h2{
 
 //GALLERY IMGS 
 
+
+
+//_________________________________________//
+
+@media (max-width: 1500px){
+    .checkered{
+        gap:30px; 
+        .one, .four{
+            box-shadow: none;
+        }
+        img{
+            top:0; 
+            right:0; 
+            bottom:0; 
+            left: 0; 
+            width:100%; 
+        }
+    }
+}
+@media (max-width: 1280px) {
+    .headerImg{
+        display: none;
+    }
+    .checkered{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .one, .four{
+        display: none;
+    }
+    .three{
+        text-align: left;
+        padding: 40px 231px 40px 70px;
+    }
+
+}
+
+@media (max-width: 940px) {
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    .headerSec1{
+        width: 50%;
+    }
+}
 @media (max-width:880px) {
     .infoSec{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: 'photos''about'
     'blog' 'getin';
+    gap:0; 
+    margin-left: 0;
+    }
+}
+@media (max-width: 700px) {
+    .header{
+        background: none;
+        height: 0vh;
+    }
+    .headerDiv{
+        display: none;
+    }
+    .about{
+        margin: 0px 0 90px 80px; 
+    }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .two, .three{
+        padding-left: 10px;
+        padding-right: 10px; 
+    }
+    .infoSec div{
+        margin-bottom: 10px;
     }
 }
