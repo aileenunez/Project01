@@ -484,6 +484,27 @@ article p {
   border-bottom: #f6a823 4px solid;
 }
 
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .blogSec {
+    grid-template-columns: 1fr;
+  }
+
+  .blogContainer {
+    grid-column: 1;
+  }
+
+  .blogSideBar {
+    grid-column: 1;
+    grid-row-start: 1;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .blog {
+    margin-left: -8%;
+  }
+}
 .contactForm input {
   height: 50px;
   width: 49%;

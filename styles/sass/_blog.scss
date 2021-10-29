@@ -91,3 +91,27 @@ article {
     border-bottom: #f6a823 4px solid;
 }
 // COMMENT SECTION 
+
+//______________________________________//
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+    .blogSec {
+        grid-template-columns: 1fr;
+    }
+    .blogContainer {
+        grid-column: 1;
+    }
+    
+    .blogSideBar {
+        grid-column: 1;
+        grid-row-start: 1;
+        // margin-top: 50px;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    .blog{
+        margin-left: -8%;
+    }
+}
