@@ -345,7 +345,7 @@ header p {
 }
 .contactInfo ul li {
   list-style: none;
-  margin-left: 30px;
+  margin-left: 10%;
   padding-bottom: 5px;
 }
 
@@ -353,7 +353,6 @@ header p {
   margin-top: 30px;
   display: inline-block;
   color: #f6a823;
-  margin-left: 30px;
 }
 
 .email {
@@ -363,6 +362,41 @@ header p {
   letter-spacing: 1px;
 }
 
+@media (max-width: 1200px) {
+  .contact p {
+    line-height: 60px;
+  }
+
+  .social li {
+    display: none;
+  }
+
+  .email {
+    padding-top: 25px;
+  }
+}
+@media (max-width: 1100px) {
+  .contactSec {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .contactInfo ul {
+    width: 100%;
+  }
+}
+@media (max-width: 940px) {
+  .contact {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contactInfo ul {
+    margin-top: 60px;
+  }
+}
 footer {
   background-color: #4f4f4f;
   color: white;
@@ -505,16 +539,20 @@ article p {
     margin-left: -8%;
   }
 }
-.contactForm input {
+.contactForm, .form2 {
+  width: 100%;
+}
+.contactForm input, .form2 input {
   height: 50px;
-  width: 49%;
+  width: calc(100% / 2 - 11px);
   margin-bottom: 25px;
   font-style: italic;
   padding-left: 25px;
   border: none;
 }
-.contactForm button {
+.contactForm button, .form2 button {
   width: 100%;
+  margin-bottom: 20px;
 }
 
 textarea {
@@ -528,7 +566,7 @@ textarea {
 }
 
 .name {
-  margin-right: 11px;
+  margin-right: 15px;
 }
 
 h1 {

@@ -27,7 +27,7 @@
     
     li {
         list-style:none; 
-        margin-left: 30px;
+        margin-left: 10%;
         padding-bottom: 5px;
     } }
 }
@@ -35,7 +35,6 @@
     margin-top:30px; 
     display: inline-block;
     color: #f6a823;
-    margin-left: 30px;
     
 }
 .email {
@@ -44,4 +43,41 @@
 
 // CONTACT SECTION 
 
+
+@media (max-width:1200px) {
+    .contact {
+        p{
+            line-height: 60px;
+        }
+    }
+    .social li{
+        display: none;
+    }
+    .email{
+        padding-top: 25px;
+    }
+}
+
+@media (max-width:1100px){
+    .contactSec {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .contactInfo { 
+        ul{ width:100%;
+        }
+    }
+}
+
+@media (max-width:940px){
+    .contact{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .contactInfo { 
+        ul{margin-top: 60px;}
+    }
+}
 
