@@ -169,7 +169,8 @@ h2{
 }
 .journeyGrid {
     display: grid;
-    grid-template-columns: 30% 66%;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 50px;
     img{
         box-shadow: 14px 14px 0px 0px #f6a823;
     }
@@ -185,12 +186,15 @@ h2{
 //JOURNEY SECTION 
 //GALLERY IMGS 
 .gallerySec{
-    width: 100%;
     background-color: white; 
     padding:70px 0; 
     div{
+        width:100%; 
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns:repeat(auto-fit, 400px);
+        justify-content: space-evenly;
+        column-gap: 30px;
+        row-gap: 30px;
     }
 }
 
@@ -230,6 +234,12 @@ h2{
         text-align: left;
         padding: 40px 231px 40px 70px;
     }
+    .journeyGrid{
+        grid-template-columns: 1fr;
+    }
+    .journeyGrid img{
+        display: none;
+    }
 
 }
 
@@ -262,7 +272,10 @@ h2{
         display: none;
     }
     .about{
-        margin: 0px 0 90px 80px; 
+        .wrapper{
+            width: 100%;
+        }
+       margin: 0px 0px 50px 30px; 
     }
 }
 /* Landscape phones and down */
