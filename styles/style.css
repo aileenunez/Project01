@@ -518,7 +518,6 @@ article p {
   border-bottom: #f6a823 4px solid;
 }
 
-/* Portrait tablet and small desktops */
 @media (max-width: 940px) {
   .blogSec {
     grid-template-columns: 1fr;
@@ -533,16 +532,15 @@ article p {
     grid-row-start: 1;
   }
 }
-/* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
   .blog {
     margin-left: -8%;
   }
 }
-.contactForm, .form2 {
+.contactForm {
   width: 100%;
 }
-.contactForm input, .form2 input {
+.contactForm input {
   height: 50px;
   width: calc(100% / 2 - 11px);
   margin-bottom: 25px;
@@ -550,7 +548,7 @@ article p {
   padding-left: 25px;
   border: none;
 }
-.contactForm button, .form2 button {
+.contactForm button {
   width: 100%;
   margin-bottom: 20px;
 }
@@ -827,7 +825,6 @@ h2 {
     display: none;
   }
 }
-/* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
   .headerSec1 {
     width: 50%;
@@ -859,7 +856,6 @@ h2 {
     width: 100%;
   }
 }
-/* Landscape phones and down */
 @media (max-width: 480px) {
   .two, .three {
     padding-left: 10px;
